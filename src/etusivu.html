@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="fi">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="etusivu.css">
     </head>
     <body>
-
+        <details class="dropdown">
+            <summary aria-label="Avaa valikko">
+                <span></span>
+                <span></span>
+                <span></span>
+            </summary>
+            <nav aria-label="Päävalikko">
+                <a href="etusivu.html#etusivu">Etusivu</a>
+                <a href="aamuilta.html">Aamu ja iltapalat</a>
+            </nav>
+        </details>
+        <header class="page-header">
+            <h1 id="etusivu">Reseptikirja</h1>
+        </header>
+        <main class="home-content">
+            <section class="featured-gallery" aria-labelledby="gallery-title">
+                <h2 id="gallery-title">Reseptikuvia</h2>
+                <div class="gallery">
+                    <button class="gallery-arrow gallery-arrow--previous" id="gallery-previous" type="button" aria-label="Edellinen kuva" disabled>
+                        <span aria-hidden="true">&lsaquo;</span>
+                    </button>
+                    <div class="gallery-viewport" id="gallery-viewport" tabindex="0" aria-label="Reseptikuvat">
+                        <div class="gallery-track">
+                            <figure class="gallery-card">
+                                <img src="190309-vihanneksia_dippi-1024x768.jpg" alt="Värikkäitä vihanneksia ja dippiä">
+                                <figcaption>Vihanneksia ja dippiä</figcaption>
+                            </figure>
+                            <figure class="gallery-card">
+                                <img src="24608687f13acd2270117bc78dc3a393.jpg" alt="Wokkia pannulla">
+                                <figcaption>Kasviswokki</figcaption>
+                            </figure>
+                            <figure class="gallery-card">
+                                <img src="32502-rouheinen-rahkasampyla.avif" alt="Rouheisia rahkasämpylöitä">
+                                <figcaption>Rahkasämpylät</figcaption>
+                            </figure>
+                            <figure class="gallery-card">
+                                <img src="42036-rahkatuorepuuro-1536x1025.jpeg" alt="Tuorepuuroa ja mustikoita">
+                                <figcaption>Tuorepuuro</figcaption>
+                            </figure>
+                            <figure class="gallery-card">
+                                <img src="vegaaninen_jaatelo.webp" alt="Vaaleanpunaista vegaanista jäätelöä">
+                                <figcaption>Vegaaninen jäätelö</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="gallery-arrow gallery-arrow--next" id="gallery-next" type="button" aria-label="Seuraava kuva">
+                        <span aria-hidden="true">&rsaquo;</span>
+                    </button>
+                </div>
+            </section>
+            <div class="suggestion-action">
+                <button class="suggestion-button" id="recipe-suggestion" type="button">Ehdota reseptiä</button>
+            </div>
+        </main>
+        <script src="etusivu.js" defer></script>
     </body>
 </html>
