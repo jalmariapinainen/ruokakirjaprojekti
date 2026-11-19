@@ -235,6 +235,38 @@ body {
     color: #536258;
 }
 
+.page {
+    width: min(100% - 32px, 780px);
+    margin: 32px auto 64px;
+    padding: 26px clamp(20px, 5vw, 36px);
+    border: 1px solid #e8e2d7;
+    border-radius: 16px;
+    background: #fffefa;
+    box-shadow: 0 8px 24px rgb(52 64 48 / 7%);
+}
+
+.page h1,
+.page h2 {
+    color: #264b3a;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.page h1 {
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e8e2d7;
+    font-size: 1.65rem;
+}
+
+.page h2 {
+    margin: 22px 0 8px;
+    font-size: 1.25rem;
+}
+
+.page p {
+    margin: 0 0 18px;
+}
+
 .dropdown {
     position: fixed;
     z-index: 2;
@@ -346,6 +378,13 @@ body {
     }
 
     .recipe-list section {
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .page {
+        width: calc(100% - 24px);
+        margin-top: 20px;
         padding: 22px 18px;
         border-radius: 12px;
     }
